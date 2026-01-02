@@ -1,0 +1,11 @@
+User-agent: *
+Disallow: /
+
+User-agent: Baiduspider+(+http://www.baidu.com/search/spider.htm)
+Disallow: /
+
+User-agent: Baiduspider+(+http://www.baidu.jp/spider/)
+Disallow: /
+
+User-agent: UA: Mozilla/5.0 (compatible; MJ12bot/v1.3.3; http://www.majestic12.co.uk/bot.php?+)
+Disallow: /
