@@ -1,43 +1,65 @@
-<html>
-
+<!doctype html>
+<html lang="en">
 <head>
-<meta http-equiv="Content-Language" content="en-us">
-<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
-<title>New Page 1</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Car Gallery — Jackcat</title>
+  <link rel="stylesheet" href="../assets/css/main.css">
 </head>
-
 <body>
+  <header>
+    <h1>Car Gallery</h1>
+    <p>Modernized responsive gallery with lightweight lightbox.</p>
+  </header>
 
-<p align="center"><font face="Arial" size="1">click to enlarge</font></p>
-<div align="center">
-	<table border="1" width="600" id="table1">
-		<tr>
-			<td align="center"><a target="_blank" href="car/car5.jpg">
-			<img border="2" src="car/car5_small.jpg" xthumbnail-orig-image="car/car5.jpg" width="200" height="133"></a></td>
-			<td align="center"><a target="_blank" href="car/car6.jpg">
-			<img border="2" src="car/car6_small.jpg" xthumbnail-orig-image="car/car6.jpg" width="200" height="133"></a></td>
-		</tr>
-		<tr>
-			<td align="center"><a target="_blank" href="car/car7.jpg">
-			<img border="2" src="car/car7_small.jpg" xthumbnail-orig-image="car/car7.jpg" width="150" height="225"></a></td>
-			<td align="center"><a target="_blank" href="car/car1.jpg">
-			<img border="2" src="car/car1_small.jpg" xthumbnail-orig-image="car/car1.jpg" width="200" height="133"></a></td>
-		</tr>
-		<tr>
-			<td align="center"><a target="_blank" href="car/car2.jpg">
-			<img border="2" src="car/car2_small.jpg" xthumbnail-orig-image="car/car2.jpg" width="200" height="133"></a></td>
-			<td align="center"><a target="_blank" href="car/car8.jpg">
-			<img border="2" src="car/car8_small.jpg" xthumbnail-orig-image="car/car8.jpg" width="150" height="223"></a></td>
-		</tr>
-		<tr>
-			<td align="center"><a target="_blank" href="car/car3.jpg">
-			<img border="2" src="car/car3_small.jpg" xthumbnail-orig-image="car/car3.jpg" width="200" height="133"></a></td>
-			<td align="center"><a target="_blank" href="car/car4.jpg">
-			<img border="2" src="car/car4_small.jpg" xthumbnail-orig-image="car/car4.jpg" width="200" height="133"></a></td>
-		</tr>
-	</table>
-</div>
+  <main>
+    <section aria-labelledby="gallery-title">
+      <h2 id="gallery-title" class="visually-hidden">Gallery</h2>
 
+      <div class="gallery" role="list">
+        <!-- Example items: replace href/src with real images in your assets/images/ folder -->
+        <figure role="listitem">
+          <a class="gallery-item" href="../assets/images/car-01-large.jpg">
+            <img src="../assets/images/car-01-thumb.jpg" alt="Classic red coupe" loading="lazy">
+            <figcaption>Classic red coupe</figcaption>
+          </a>
+        </figure>
+
+        <figure role="listitem">
+          <a class="gallery-item" href="../assets/images/car-02-large.jpg">
+            <img src="../assets/images/car-02-thumb.jpg" alt="Blue vintage roadster" loading="lazy">
+            <figcaption>Blue vintage roadster</figcaption>
+          </a>
+        </figure>
+
+        <figure role="listitem">
+          <a class="gallery-item" href="../assets/images/car-03-large.jpg">
+            <img src="../assets/images/car-03-thumb.jpg" alt="Green rally car" loading="lazy">
+            <figcaption>Green rally car</figcaption>
+          </a>
+        </figure>
+
+        <figure role="listitem">
+          <a class="gallery-item" href="../assets/images/car-04-large.jpg">
+            <img src="../assets/images/car-04-thumb.jpg" alt="Black modern sports car" loading="lazy">
+            <figcaption>Black modern sports car</figcaption>
+          </a>
+        </figure>
+
+        <!-- Add more figures as needed -->
+      </div>
+
+      <noscript>
+        <p>JavaScript is required for the lightbox. Click the thumbnails to open full-size images.</p>
+      </noscript>
+
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; Jackcat</p>
+  </footer>
+
+  <script src="../assets/js/site.js" defer></script>
 </body>
-
 </html>
