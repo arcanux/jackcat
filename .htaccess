@@ -1,0 +1,28 @@
+# Modernized .htaccess: custom error pages and basic hardening
+
+# Disable directory listing
+Options -Indexes
+
+# Hide server signature
+ServerSignature Off
+
+# Ensure rewriting is available for other site rules
+RewriteEngine On
+
+# Custom error documents
+ErrorDocument 404 /AC/404.html
+ErrorDocument 403 /AC/403.html
+
+# Deny access to sensitive dotfiles (Apache 2.4+)
+<FilesMatch "^\.(htaccess|env|ini|phps|sql)$">
+    Require all denied
+</FilesMatch>
+
+# Security headers (if mod_headers is available)
+<IfModule mod_headers.c>
+    Header always set X-Frame-Options "DENY"
+    Header always set X-Content-Type-Options "nosniff"
+    Header always set Referrer-Policy "no-referrer-when-downgrade"
+    Header always set X-XSS-Protection "1; mode=block"
+    Header always set Content-Security-Policy "default-src 'self'; img-src 'self' data:; style-src 'self' 'unsafe-inline'; script-src 'self';"
+</IfModule>
