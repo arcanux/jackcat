@@ -1,0 +1,49 @@
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+.header, .footer {
+    background-color: #5a5a5a; /* Dark grey */
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+.button {
+    background-color: #6a1b9a; /* Purple */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+.button:hover {
+    background-color: #4e148c; /* Darker purple */
+}
+
+.card {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 15px;
+    margin: 10px 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+h1, h2, h3 {
+    font-family: 'Arial', sans-serif;
+    color: #6a1b9a; /* Purple */
+}
+
+p {
+    line-height: 1.6;
+}
