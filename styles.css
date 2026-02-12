@@ -453,6 +453,12 @@ a:active {
   text-align: center;
 }
 
+.wrapper-subtitle {
+  text-align: center;
+  margin: 0;
+  font-size: 0.9rem;
+}
+
 .wrapper-nav {
   background-color: var(--color-primary);
   padding: var(--spacing-sm) 0;
