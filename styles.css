@@ -554,6 +554,18 @@ a:active {
 .sidebar-links p {
   margin-bottom: var(--spacing-sm);
 }
+
+/* Page-specific navigation */
+.page-nav {
+  background-color: var(--color-secondary);
+  padding: var(--spacing-sm) 0;
+  margin-bottom: var(--spacing-lg);
+}
+
+.page-nav .nav-list {
+  gap: var(--spacing-xs);
+  font-size: var(--font-size-sm);
+}
 /* CSS Variables - Original Jackcat Color Palette */
 :root {
     --color-bg-primary: #774F6D;      /* Body background - purple/mauve */
