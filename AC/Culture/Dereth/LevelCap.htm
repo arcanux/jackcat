@@ -78,7 +78,7 @@
 		experience (XP) in a variety of ways, including by killing monsters, by 
 		completing quests, and by using skills. When a character earns XP, the 
 		amount they earn is added to a counter of total experience. Total XP is 
-		used only to determine that character's level – it cannot be spent to 
+		used only to determine that character's level  it cannot be spent to 
 		develop the character; and it can only go up, never down. Depending on 
 		the source of the earned XP, the amount earned is also added either 
 		directly to a skill or attribute, or to a counter of available XP. 
@@ -108,27 +108,27 @@
 		<p><font size="2" face="Arial">It's easy to see that total XP <i>should</i> 
 		equal the sum of available XP and invested XP. In AC as it stands today, 
 		however, that isn't always true. There are some minor ways that these 
-		numbers can become out of synch – for instance, when you break from your 
+		numbers can become out of synch  for instance, when you break from your 
 		patron and then swear to another patron, the swearing costs a small 
 		amount of available XP without increasing your invested XP, so the sum 
 		of available and invested is now less than the total. More common, 
-		however, is the situation in which invested XP far outpaces total XP – 
+		however, is the situation in which invested XP far outpaces total XP  
 		this happens whenever a character hits the current level cap. </font>
 		</p>
 		<p><font size="2" face="Arial">See, in our current system, all the XP 
-		values of a character – including the counters for total XP, available 
-		XP, and the XP invested into each skill and attribute – are stored in 
+		values of a character  including the counters for total XP, available 
+		XP, and the XP invested into each skill and attribute  are stored in 
 		32-bit integers. This means that there is an implicit cap on these 
 		values. You cannot store a number larger than about 4.2 billion in a 
 		32-bit integer. So total experience is capped at approximately 4.2 
-		billion – or, using our handy XP-to-level table, level 126. So a player 
+		billion  or, using our handy XP-to-level table, level 126. So a player 
 		character can never exceed level 126.</font></p>
 		<p><font size="2" face="Arial">Invested XP, however, can continue to 
 		increase even after total XP has run out of room. Because invested XP is 
 		the sum of the XP invested into each skill and attribute, and each skill 
 		and attribute can hold up to about 4.2 billion XP, the maximum possible 
 		invested experience is almost 150 billion. That's 26 skills with capped 
-		XP – the most you can afford with every skill credit in the game – plus 
+		XP  the most you can afford with every skill credit in the game  plus 
 		6 attributes, and 3 secondary attributes all capped at 4.2 billion. Note 
 		that different character templates have different numbers of skills 
 		available to invest into, and therefore different maximum possible 
@@ -138,8 +138,8 @@
 		character. Because AC is primarily skill-based and not level-based, a 
 		character's total XP does not actually confer any direct benefits to the 
 		character (except the ability to enter certain level-restricted dungeons 
-		or use certain level-restricted items). Total XP – and thus character 
-		level – is merely a measure of how much XP a character <i>could</i> have 
+		or use certain level-restricted items). Total XP  and thus character 
+		level  is merely a measure of how much XP a character <i>could</i> have 
 		invested into skills and attributes if they invested everything they 
 		earned. In a sense, then, character level is a rough measure of the 
 		maximum potential power level of a character. </font></p>
@@ -169,8 +169,8 @@
 		to use all of that space, though. We've decided that the new cap will be 
 		level 275, which can be reached with about 191 billion XP.</font></p>
 		<p><font size="2" face="Arial">But if we just allow total XP to increase 
-		without fixing the current mess – in which total XP and invested XP are 
-		terribly out of synch over level 126 – then we've merely added more 
+		without fixing the current mess  in which total XP and invested XP are 
+		terribly out of synch over level 126  then we've merely added more 
 		confusion to the system. So in addition to increasing the storage for 
 		total XP, we are also going to recalculate total XP based on the sum of 
 		available and invested XP. We'll do this once for each character, the 
@@ -189,11 +189,11 @@
 		order to drive your invested XP as high as possible. You have maximized 
 		every skill possible, plus all your attributes, and you've even capped 
 		your available XP. It is not physically possible for you to earn XP 
-		anymore – there's nowhere for it to go! The first time you log in after 
+		anymore  there's nowhere for it to go! The first time you log in after 
 		upgrading to the expansion, your total XP will be set to about 150 
 		billion, you will advance to level 261, and you will receive 8 skill 
 		credits. Note that you will <b><i>not</i></b> be at the new level cap of 
-		275 – you will still have about 41 billion XP left to go to get there.</font></p>
+		275  you will still have about 41 billion XP left to go to get there.</font></p>
 		<p><font size="2" face="Arial">Okay, so that gets everyone on the same 
 		page again as far as total XP is concerned. But what about going 
 		forward? What happens when the first character reaches the new cap? 
@@ -238,10 +238,10 @@
 		experience (only if you have enough, of course!), your character 
 		receives the benefit, and the gem is destroyed. </font></p>
 		<p><font size="2" face="Arial">All Augmentation effects are permanent, 
-		some can be repeated and some cannot, but they cannot be undone – there 
+		some can be repeated and some cannot, but they cannot be undone  there 
 		is no Augmentation sellback! On the other hand, with enough time and 
 		experience, it is theoretically possible for any character to collect 
-		all the Augmentations.&nbsp; It will take some time, however – we currently 
+		all the Augmentations.&nbsp; It will take some time, however  we currently 
 		plan on a one-month timer for completing the Augmentation Gem quest. 
 		With more than 30 Augmentations planned, that's over two years of 
 		character development.</font></p>
@@ -271,7 +271,7 @@
 		<p><font face="Arial"><font size="2">So that's the basic plan for 
 		raising the level cap and providing alternative character development 
 		through Augmentation Gems. There are a number of additional issues 
-		related to the level cap – these are addressed in the </font>
+		related to the level cap  these are addressed in the </font>
 		<span lang="en-us"><font size="2">
 		<a target="_blank" href="http://ac.turbinegames.com/index.php?page_id=281">
 		FAQ.</a></font></span></font><span lang="en-us"><font face="Arial" size="2"><br>
@@ -288,11 +288,11 @@
 <a href="../../Travel/travel.htm" Target="_top"><small>
 <small>Transportation</small></small></a> <small>
 <small>| 
-<a Target="_top" href="../../places.asp.html">Tourism</a> 
+<!-- <a Target="_top" href="../../places.asp.html">Tourism</a>  -->
 | <a href="../../Food/Food.htm" Target="_top">
 Restaurants</a> | 
 <a href="../../Apparel/apparel.htm" Target="_top">Apparel</a> 
-| <a Target="_top" href="../../pets.asp.html">Pets</a> 
+<!-- | <a Target="_top" href="../../pets.asp.html">Pets</a>  -->
 | <a href="../../Sports/sports.htm" Target="_top">
 Sports</a> | 
 <a href="../../Careers/careers.htm" Target="_top">Careers</a> 
@@ -310,7 +310,7 @@ Directory</a> <br>
 <a href="http://forums.thejackcat.com/">Forums</a> |
 <a href="../../Home/Search.htm">Search</a> |
 <a href="../../index.html" Target="_top">Home</a></small></small></p>
-<p align="center"><font face="Arial" size="-2">© Copyright 
+<p align="center"><font face="Arial" size="-2"> Copyright 
 1999<span lang="en-us"> - 200</span>6 by Maggie the Jackcat. <br>
 This page is not affiliated with 
 <a Target="_blank" href="http://www.turbinegames.com/">Turbine, Inc</a>.
