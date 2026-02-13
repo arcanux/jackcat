@@ -93,7 +93,7 @@
 		LEVELCAP' comment and went searching for everywhere that the code called 
 		the accessors. At this point I knew that the code was pretty well 
 		confined to a class called WAgent (players and creatures and NPCs, more 
-		or less), but I still searched the entire bloody code base anyway – it's 
+		or less), but I still searched the entire bloody code base anyway  it's 
 		better not to be surprised. </font></p>
 		<p><font size="2" face="Arial">That search lead me to two methods called 
 		AddCharacterPoints (the old name for available experience) and 
@@ -104,7 +104,7 @@
 		AddCharacterPoints is called by NPCs (for quest rewards), by the 
 		allegiance system (for allegiance XP), by the fellowship system (for 
 		fellowship XP), and by creatures when you kill them. It's also, however, 
-		called by AddProficiencyPoints – because 10% of the XP you earn by using 
+		called by AddProficiencyPoints  because 10% of the XP you earn by using 
 		skills is also added to your available experience. I knew that, at some 
 		point, but I'd forgotten it, so it's a good thing I did a search or I 
 		might have missed this case. </font></p>
@@ -114,9 +114,9 @@
 		decide where in the code path we need to start supporting 64-bit 
 		integers and pointed out all the locations on the server I would need to 
 		modify to match. It also allowed me to make some minor improvements to 
-		bits of the code path that were less than optimal – turns out we were 
+		bits of the code path that were less than optimal  turns out we were 
 		doing some silly stuff to figure out if you had leveled every time you 
-		gained XP – and reminded me of extra test cases to write up in the 
+		gained XP  and reminded me of extra test cases to write up in the 
 		specification. You can see why I say that searching is one of my 
 		foremost coding tools. There's nothing magical about working with our 
 		code base; it's just a matter of finding a starting point and unraveling 
@@ -135,11 +135,11 @@
 <a href="../../Travel/travel.htm" Target="_top"><small>
 <small>Transportation</small></small></a> <small>
 <small>| 
-<a Target="_top" href="../../places.asp.html">Tourism</a> 
+<!-- <a Target="_top" href="../../places.asp.html">Tourism</a>  -->
 | <a href="../../Food/Food.htm" Target="_top">
 Restaurants</a> | 
 <a href="../../Apparel/apparel.htm" Target="_top">Apparel</a> 
-| <a Target="_top" href="../../pets.asp.html">Pets</a> 
+<!-- | <a Target="_top" href="../../pets.asp.html">Pets</a>  -->
 | <a href="../../Sports/sports.htm" Target="_top">
 Sports</a> | 
 <a href="../../Careers/careers.htm" Target="_top">Careers</a> 
@@ -157,7 +157,7 @@ Directory</a> <br>
 <a href="http://forums.thejackcat.com/">Forums</a> |
 <a href="../../Home/Search.htm">Search</a> |
 <a href="../../index.html" Target="_top">Home</a></small></small></p>
-<p align="center"><font face="Arial" size="-2">© Copyright 
+<p align="center"><font face="Arial" size="-2"> Copyright 
 1999<span lang="en-us"> - 200</span>6 by Maggie the Jackcat. <br>
 This page is not affiliated with 
 <a Target="_blank" href="http://www.turbinegames.com/">Turbine, Inc</a>.
