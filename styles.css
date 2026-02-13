@@ -525,6 +525,47 @@ a:active {
     color: black;
     text-decoration: underline;
   }
+}
+
+/* ============================================
+   Page-Specific Styles
+   ============================================ */
+.special-sections ul {
+  list-style: none;
+  padding-left: 0;
+  margin-top: var(--spacing-sm);
+}
+
+.special-sections li {
+  margin-bottom: var(--spacing-xs);
+}
+
+.contact-note {
+  font-size: var(--font-size-sm);
+  font-style: italic;
+  margin-top: var(--spacing-md);
+}
+
+.sidebar-links {
+  margin-top: var(--spacing-lg);
+  font-size: var(--font-size-sm);
+}
+
+.sidebar-links p {
+  margin-bottom: var(--spacing-sm);
+}
+
+/* Page-specific navigation */
+.page-nav {
+  background-color: var(--color-secondary);
+  padding: var(--spacing-sm) 0;
+  margin-bottom: var(--spacing-lg);
+}
+
+.page-nav .nav-list {
+  gap: var(--spacing-xs);
+  font-size: var(--font-size-sm);
+}
 /* CSS Variables - Original Jackcat Color Palette */
 :root {
     --color-bg-primary: #774F6D;      /* Body background - purple/mauve */
